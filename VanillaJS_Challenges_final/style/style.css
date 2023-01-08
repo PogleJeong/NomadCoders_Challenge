@@ -1,0 +1,206 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover; /*cover 확대축소해도 꽉차게*/
+}
+
+button:active { /*버튼이 눌리면 | 스케일(규모)이 0.95로 변한다(transform)*/
+    transform: scale(0.95); 
+}
+
+#entire-Box {
+    animation: fadein 1s;
+}
+
+#info-Container {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(222, 222, 222, 0.644);
+    border-radius: 20px;
+}
+
+@keyframes fadein { /*animation 을 사용할때 @keyframe 애니메이션명 해줘야함.*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+#main-Container {
+    display: inline-block;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 1px gray solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px #999;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left:0;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+#inputText {
+    position: relative;
+    height: 400px;
+}
+#inputText span {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 150px;
+}
+#inputText button {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 30px;
+}
+
+
+#inputText button:hover {
+    color: white;
+    background-color: darkslateblue;
+    transition: 0.5s;
+}
+
+#inputID {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: rgb(222,222,222);
+}
+
+#inputPW {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: rgb(222,222,222);
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #FFCCFF;
+}
+
+.sign-up-container p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.sign-up-container button {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 30px;
+}
+.sign-up-container button:hover {
+    color: darkgreen;
+    background-color: blanchedalmond;
+    transition: 0.5s;
+}
+#quoteBox {
+    text-align: center;
+    background-color: rgba(222, 222, 222, 0.644);
+    border-radius: 20px;
+    animation: fadein 1s;
+}
+
+#quoteBox p:first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+#quoteBox p:last-child {
+    font-size: 11px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.invisible-container {
+    display: none;
+}
+.overlay-container {
+    display:inline-block;
+    text-align: center;
+    width: 500px;
+    height: 800px;
+    border-radius: 30px;
+    background-color: rgba(222, 222, 222, 0.644);
+    animation: fadein 1s;
+}
+.overlay-container h2 {
+    line-height: 100px;
+    width: 100%;
+    
+}
+#todo-list li {
+    position: relative; /*버튼 위치 조정하기 위함.*/
+    width: 400px;
+    line-height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(124, 184, 185, 0.644);
+}
+
+#todo-form input {
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    padding-left:15px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(222,222,222);
+}
+
+#todo-list li button {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border-style: none;
+    background-color: rgb(124, 184, 185, 0.344); /* 배경과 같은 색*/
+}

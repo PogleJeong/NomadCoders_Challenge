@@ -1,0 +1,53 @@
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#create-account-form {
+    border: 3px green solid;
+    border-radius: 15px;
+    text-align:center;
+    height: 400px;
+    width: 300px;
+}
+
+#create-account-form p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    height: 100px;
+}
+
+
+#id {
+    width:250px;
+    height:25px;
+    margin-bottom: 5px;
+}
+
+#pw {
+    width:250px;
+    height:25px;
+    margin-bottom: 20px;
+}
+
+#create-account-form button {
+    width:100px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+}
+#create-account-form button:hover {
+    background-color: aquamarine;
+    transform: 1s;
+}
+#create-account-form button:active {
+    background-color: antiquewhite;
+    transform: scale(0.9);
+}
